@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context=".Fragment_4">
+
+    <!-- TODO: Layout datos de indicadora-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:background="@color/blanco"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/violetta_color" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|clip_vertical"
+                android:layout_marginBottom="20dp"
+                android:background="@color/blanco"
+                android:orientation="vertical">
+
+                <!-- TITULO -->
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:background="@color/negro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="60"
+                        android:text="@string/titulo_datos_de_indicadora"
+                        android:textAlignment="center"
+                        android:textColor="@color/negro"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:background="@color/negro" />
+
+                </LinearLayout>
+
+                <!-- NOMBRE -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/nombre_indicadora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_person_dos"
+                            android:focusable="auto"
+                            android:hint="@string/nombre_apellido_no"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- NUNERO DE CEUNTA  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/cuenta_indicadora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_person_dos"
+                            android:focusable="auto"
+                            android:hint="@string/numero_cuenta_no"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- PREMIO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/premio_indicadora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_person_dos"
+                            android:focusable="auto"
+                            android:hint="@string/numero_premio_no"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- ZONA SECCION -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/zona_seccion_indicadora"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/numero_zona_seccion"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- TITULO -->
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:background="@color/negro" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="60"
+                        android:text="@string/titulo_descripcion_se"
+                        android:textAlignment="center"
+                        android:textColor="@color/negro"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:background="@color/negro" />
+
+                </LinearLayout>
+
+                <!-- DESCRIPCION DE INMUEBLE -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/descripcion_inmueble_postulante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_home"
+                            android:focusable="auto"
+                            android:hint="@string/descripcion_inmueble"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- CANTIDAD DE AMBIENTES QUE POSEE -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/cantidad_ambientes_postulante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_home"
+                            android:focusable="auto"
+                            android:hint="@string/cantidad_ambientes"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- OPINION PV -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/opinion_pv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_opin"
+                            android:focusable="auto"
+                            android:hint="@string/opinion_pv"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <!-- FRIMA -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/firma"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_edit"
+                            android:focusable="auto"
+                            android:hint="FIRMA POSTULANTE"
+                            android:inputType="textMultiLine"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

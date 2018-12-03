@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="negro">#292a3e</color>
+    <color name="blanco">#f1ffffff</color>
+    <color name="blanco_opaco">#bfbfbf</color>
+    <color name="rojo">#bb4d50</color>
+
+    <color name="primary">#f990bf</color>
+    <color name="primary_dark">#f990c0</color>
+    <color name="primary_darker">#504f69</color>
+
+    <color name="iconDark">#99000000</color>
+
+    <color name="transparentBlack">#48000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- ONBOARDING -->
+    <color name="indicator_unselected">#4D000000</color>
+
+    <color name="lightBlue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+
+    <color name="dividerColor">#B6B6B6</color>
+    <color name="dividerColorLight">#48B6B6B6</color> <!--30% transparent-->
+</resources>

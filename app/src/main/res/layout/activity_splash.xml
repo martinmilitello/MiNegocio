@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_black"
+    tools:context=".Splash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ae000000">
+
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="221dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="234dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="268dp"
+            android:src="@drawable/logo_blanco" />
+
+        <TextView
+            android:id="@+id/splash_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="VERSION 1.0.0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#c1bcbc"
+            android:textSize="8sp" />
+    </RelativeLayout>
+</RelativeLayout>

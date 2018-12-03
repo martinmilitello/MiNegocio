@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context=".Fragment_2">
+
+    <!-- TODO: Layout datos de posicion-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:background="@color/blanco"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/violetta_color" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|clip_vertical"
+                android:layout_marginBottom="20dp"
+                android:background="@color/blanco"
+                android:orientation="vertical">
+
+                <!-- TITULO -->
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_weight="20"
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/negro"/>
+
+                    <TextView
+                        android:layout_weight="60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/titulo_datos_de_posicion"
+                        android:textAlignment="center"
+                        android:textColor="@color/negro"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_weight="20"
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/negro"/>
+
+
+                </LinearLayout>
+
+                <!-- CALLE -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/calle_postulante"
+                            android:backgroundTint="@color/negro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/calle"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- ALTURA -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp">
+
+                        <EditText
+                            android:id="@+id/calle_numero_postulante"
+                            android:backgroundTint="@color/negro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/calle_numero"
+                            android:inputType="number"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- PISO -->
+                <LinearLayout
+                    android:layout_weight="100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_weight="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/piso_postulante"
+                            android:backgroundTint="@color/negro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_edif"
+                            android:focusable="auto"
+                            android:hint="@string/piso"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- DPTO -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_weight="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/dpto_postulante"
+                            android:backgroundTint="@color/negro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_edif"
+                            android:focusable="auto"
+                            android:hint="@string/dpto"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- PROVINCIA -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/provincia_postulante"
+                            android:backgroundTint="@color/negro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/provincia"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- LOCALIDAD -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/localidad_postulante"
+                            android:backgroundTint="@color/negro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/localidad"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- BARRIO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/barrio_postulante"
+                            android:backgroundTint="@color/negro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/barrio"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- CP -->
+                <LinearLayout
+                    android:layout_weight="100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="100">
+
+                        <EditText
+                            android:id="@+id/cp_postulante"
+                            android:backgroundTint="@color/negro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/cp"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- COORDENADA + MAPA-->
+                    <ImageView
+                        android:layout_weight="0"
+                        android:id="@+id/cam_dni"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_coor" />
+
+                </LinearLayout>
+
+                <!-- INQUILINA / PROPETARIA -->
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:weightSum="100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:drawableStart="@drawable/ic_person"
+                        android:layout_weight="30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:hint="@string/es_inquilina_propetaria"
+                        android:layout_gravity="left|center_vertical"
+                        android:backgroundTint="@color/negro"
+                        android:textColor="@color/negro"
+                        android:textSize="14sp" />
+
+                    <Spinner
+                        android:layout_weight="70"
+                        android:id="@+id/es_inquilina_propetaria"
+                        android:prompt="@string/es_inquilina_propetaria_titulo"
+                        style="@style/Platform.Widget.AppCompat.Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/negro"
+                        android:spinnerMode="dialog"
+                        android:textColor="@color/blanco"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+
+                <!-- HABITA DESDE -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/habita_desde_postulante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_person"
+                            android:focusable="auto"
+                            android:hint="@string/habita_desde"
+                            android:inputType="number"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

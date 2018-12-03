@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Mi Negocio</string>
+    <string name="action_settings">Configuracion</string>
+
+    <!-- TODO: Estados en lista  -->
+    <string name="enviado">ENVIADO</string>
+    <string name="no_enviado">NO ENVIADO</string>
+    <string name="gurdado">GUARDADO</string>
+
+    <!-- TODO: Titulos  -->
+    <string name="titulo_datos_de_contacto">DATOS DE CONTACTO :</string>
+    <string name="titulo_datos_de_posicion">DATOS DE DOMICILIO :</string>
+    <string name="titulo_datos_de_conyugue">DATOS DE CONYUGUE :</string>
+    <string name="titulo_datos_de_referencia">DOS REFERENCIAS PERSONALES O COMERCIALES :</string>
+    <string name="titulo_datos_de_indicadora">DATOS INDICADORA :</string>
+    <string name="titulo_descripcion_se">IMPRESION SOCIO - ECONOMICA :</string>
+
+    <!-- TODO: Datos de contacto  -->
+    <string name="nombre">NOMBRE *</string>
+    <string name="apellido">APELLIDO *</string>
+    <string name="fechanac">FECHA NACIMIENTO *</string>
+    <string name="dni">D.N.I *</string>
+    <string name="dni_foto">FOTO D.N.I *</string>
+    <string name="estado_civil">ESTADO CIVIL</string>
+    <string name="email">EMAIL</string>
+    <string name="telefono">TELEFONO *</string>
+    <string name="ocupacion">OCUPACION</string>
+
+    <!-- TODO: Datos de domicilio  -->
+    <string name="calle">CALLE *</string>
+    <string name="calle_numero">NUMERO *</string>
+    <string name="piso">PISO</string>
+    <string name="dpto">DPTO</string>
+    <string name="coordenada">COORDENADA</string>
+    <string name="cp">CP *</string>
+    <string name="provincia">PROVINCIA *</string>
+    <string name="localidad">LOCALIDAD *</string>
+    <string name="barrio">BARRIO</string>
+    <string name="es_inquilina_propetaria">ES</string>
+    <string name="es_inquilina_propetaria_titulo">INQUILINA / PROPETARIA</string>
+    <string name="inquilina">INQUILINA</string>
+    <string name="propetaria">PROPETARIA</string>
+    <string name="habita_desde">HABITA DESDE</string>
+
+    <!-- TODO: Datos de domicilio  -->
+    <string name="nombre_conyugue">NOMBRE</string>
+    <string name="apellido_conyugue">APELLIDO</string>
+    <string name="dni_conyugue">D.N.I</string>
+
+    <!-- TODO: Referencia personal o comercial -->
+    <string name="nombre_apellido">NOMBRE Y APELLIDO</string>
+    <string name="domicilio">DOMICILIO</string>
+    <string name="telefono_referencia">TELEFONO</string>
+
+    <!-- TODO: Datos de indicadora -->
+    <string name="nombre_apellido_no">NOMBRE y APELLIDO</string>
+    <string name="numero_cuenta_no">NUMERO DE CUENTA</string>
+    <string name="numero_premio_no">PREMIO</string>
+    <string name="numero_zona_seccion">ZONA / SECCION</string>
+
+    <!-- TODO: Impresion socio - economica -->
+    <string name="descripcion_inmueble">DESCRIPCION DEL INMUEBLE</string>
+    <string name="cantidad_ambientes">CANTIDAD DE AMBIENTES</string>
+    <string name="opinion_pv">OPINION PERSONAL DE LA PV</string>
+
+    <!-- TODO: Menu -->
+    <string name="btn_skip">SALIR</string>
+    <string name="btn_finish">GUARDAR</string>
+
+</resources>

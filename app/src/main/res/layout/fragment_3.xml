@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context=".Fragment_3">
+
+    <!-- TODO: Layout datos de conyugue-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:background="@color/blanco"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/violetta_color" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|clip_vertical"
+                android:layout_marginBottom="20dp"
+                android:background="@color/blanco"
+                android:orientation="vertical">
+
+                <!-- TITULO -->
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:background="@color/negro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="60"
+                        android:text="@string/titulo_datos_de_conyugue"
+                        android:textAlignment="center"
+                        android:textColor="@color/negro"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:background="@color/negro" />
+
+                </LinearLayout>
+
+                <!-- NOMBRE -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/nombre_conyugue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_person_dos"
+                            android:focusable="auto"
+                            android:hint="@string/nombre_conyugue"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- APELLIDO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/apellido_conyugue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_person_dos"
+                            android:focusable="auto"
+                            android:hint="@string/apellido_conyugue"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- DNI -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/documento_conyugue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_person_dos"
+                            android:focusable="auto"
+                            android:hint="@string/dni_conyugue"
+                            android:inputType="number"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- OCUPACION -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/ocupacion_conyugue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_work"
+                            android:focusable="auto"
+                            android:hint="@string/ocupacion"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- TITULO -->
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:background="@color/negro" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="60"
+                        android:text="@string/titulo_datos_de_referencia"
+                        android:textAlignment="center"
+                        android:textColor="@color/negro"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:background="@color/negro" />
+
+                </LinearLayout>
+
+                <!-- NOMBRE Y APELLIDO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/nombre_uno_referencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_person_dos"
+                            android:focusable="auto"
+                            android:hint="@string/nombre_apellido"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- DOMICILIO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/domicilio_uno_referencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/domicilio"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- TELEFONO -->
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/telefono_uno_referencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_phon"
+                            android:focusable="auto"
+                            android:hint="@string/telefono_referencia"
+                            android:inputType="number"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- NOMBRE Y APELLIDO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/nombre_dos_referencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/nombre_apellido"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- DOMICILIO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/domicilio_dos_referencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_place"
+                            android:focusable="auto"
+                            android:hint="@string/domicilio"
+                            android:inputType="text"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <!-- TELEFONO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp">
+
+                        <EditText
+                            android:id="@+id/telefono_dos_referencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/negro"
+                            android:drawableStart="@drawable/ic_phon"
+                            android:focusable="auto"
+                            android:hint="@string/telefono_referencia"
+                            android:inputType="number"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

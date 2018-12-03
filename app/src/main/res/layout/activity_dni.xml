@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/blanco"
+    tools:context=".DniActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="onBackDni"
+            android:id="@+id/dni_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|bottom"
+            android:src="@drawable/ic_back" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_weight="40"
+        android:id="@+id/imagen_dni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/dni_frente" />
+
+    <TextView
+        android:layout_weight="10"
+        android:id="@+id/text_dni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOMAR FOTO FRENTE D.N.I"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_dni"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:layout_gravity="center_horizontal|bottom"
+        android:fontFamily="@font/cafe"
+        android:text="TOMAR FOTO"
+        android:textColor="@color/white"
+
+        android:textSize="20sp" />
+</LinearLayout>
